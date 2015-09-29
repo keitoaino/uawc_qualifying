@@ -1,0 +1,21 @@
+<div class="container column">
+  <div class="links">
+    <a href="/">carousel</a>
+    <a href="/settings">settings</a>
+  </div>
+
+  <div class="spaced">
+    <div class="control-group">
+      <label for="width">Width</label>
+      <input id="width" type="number" ng-model="size.width" ng-change="updateSize()">
+    </div>
+
+    <div class="control-group">
+      <label for="height">Height</label>
+      <input id="height" type="number" ng-model="size.height" ng-change="updateSize()">
+    </div>
+  </div>
+
+  <div class="hint">Params will be saved automatically</div>
+  <div class="hint">Set of your favorite images will be cleared after params change</div>
+</div>

@@ -1,0 +1,9 @@
+{
+  "name": "LoremPixelApp",
+  "private": "true",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "angular-carousel": "~0.3.13",
+    "angular-route": "~1.4.5"
+  }
+}

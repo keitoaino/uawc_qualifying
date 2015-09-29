@@ -1,0 +1,25 @@
+select, input {
+  padding: .5em 1em;
+
+  background-color: #ecf0f1;
+  color: #2c3e50;
+
+  border: 1px solid rgba(44, 62, 80, .4);
+  border-radius: 4px;
+
+  box-shadow: none;
+}
+
+select {
+  text-transform: uppercase;
+}
+
+.control-group {
+  display: inline-block;
+}
+
+.control-group label {
+  display: block;
+
+  font-size: .8em;
+}

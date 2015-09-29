@@ -1,0 +1,45 @@
+i {
+  font-style: normal;
+
+  opacity: .6;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-transition: opacity .4s;
+
+  transition: opacity .4s;
+
+  cursor: pointer;
+}
+
+i:hover {
+  opacity: 1;
+}
+
+i:before {
+  font-family: fontello;
+  font-size: 2em;
+}
+
+i.arrow.left {
+  margin-right: 1em;
+}
+
+i.arrow.left:before {
+  content: '\e800';
+}
+
+i.arrow.right {
+  margin-left: 1em;
+}
+
+i.arrow.right:before {
+  content: '\e801';
+}
+
+i.like:before {
+  content: '\e802';
+}

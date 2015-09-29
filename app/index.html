@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+    <title>LoremPixel Carousel</title>
+
+    <base href="/"></base>
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/icons.css">
+    <link rel="stylesheet" href="styles/inputs.css">
+    <link rel="stylesheet" href="styles/links.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/lib/angular-carousel.min.css">
+    <!-- endinject -->
+  </head>
+  <body ng-app="loremPixelApp">
+    <ng-view></ng-view>
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-carousel/dist/angular-carousel.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+
+    <!-- inject:js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/configs/routes.js"></script>
+    <script src="scripts/configs/values.js"></script>
+    <script src="scripts/controllers/carousel.js"></script>
+    <script src="scripts/controllers/settings.js"></script>
+    <script src="scripts/directives/smooth-load.js"></script>
+    <script src="scripts/lib/angular-carousel.min.js"></script>
+    <script src="scripts/services/image.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<div class="container row">
+  <i class="arrow left" ng-click="prevImage()"></i>
+
+  <div>
+    <div class="links">
+      <a href="/">photos</a>
+      <a href="/settings">settings</a>
+    </div>
+
+    <div class="main-wrapper">
+      <ul ng-style="carouselStyle" rn-carousel rn-carousel-index="carouselIndex">
+        <li ng-repeat="image in images" ng-click="toggleLike(image)">
+          <img ng-src="{{image.url}}" smooth-load>
+          <i class="like" ng-class="{'active': image.liked}"></i>
+        </li>
+      </ul>
+
+      <div class="controls">
+        <div class="control-group pull-left">
+          <label for="categories">Category</label>
+          <select
+            id="categories"
+            class="categories"
+            ng-model="selectedCategory"
+            ng-options="category for category in categories"
+            ng-change="loadCategory()"
+          ></select>
+        </div>
+
+        <div
+          class="control-group pull-right"
+          ng-show="hasFavorites() || imageSet == 'favorites'"
+        >
+          <label for="image-set">Image Set</label>
+          <select id="image-set" ng-model="imageSet" ng-change="switchImageSet()">
+            <option value="category">by category</option>
+            <option value="favorites">favorites</option>
+          </select>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+
+  <i class="arrow right" ng-click="nextImage()"></i>
+</div>

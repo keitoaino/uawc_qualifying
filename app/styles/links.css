@@ -1,0 +1,9 @@
+.links {
+  padding-bottom: 1em;
+
+  text-align: center;
+}
+
+.links a {
+  margin: 0 .5em;
+}
